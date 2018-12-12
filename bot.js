@@ -3,7 +3,7 @@ const client = new Discord.Client();
 var prefix = "+";
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`HerosSystem- Script By : HemaCraft`);
+      console.log(`Leaders- Script By : HemaCraft`);
         console.log(`----------------`);
       console.log(`ON ${client.guilds.size} Servers '     Script By : HemaCraft ' `);
     console.log(`----------------`);
