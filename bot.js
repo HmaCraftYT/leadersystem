@@ -384,8 +384,10 @@ client.on('message', message => {
 
  [+help ! لمعرفة اوامر البوت ]
  [+invites ! لمعرفة عدد الاشخاص الذين دعوتهم للسيرفر ]
- [+invite ! للحصول على رابط لاضافة البوت ]
- 
+ [+id ! لمعرفة معلوماتك الشخصية ]
+ [+server ! لمعرفة معلومات السيرفر ]
+ [+report ! للابلاغ عن شخص ]
+ [+date ! لمعرفة الوقت والتاريخ ]
 
 {[اوامر الادارة]}
  
@@ -396,6 +398,7 @@ client.on('message', message => {
  [+Mute !! لاعطاء ميوت كتابى]
  [+UnMute !! لفك الميوت الكتابى]
  [+clear !! لمسح الشات]
+ [+svonline !! عمل روم لمعرفة عدد الاشخاص الاونلاين فى الفويس ]
 `);
        }
 });	   
@@ -487,7 +490,7 @@ client.on('message', message =>{
     let args = messageArray.slice(1);
     let prefix = '+';
      
-    if(cmd === `${prefix}ابلاغ`){
+    if(cmd === `${prefix}report`){
         let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
         if(!rUser) return message.channel.send("ما اعرف ابلغ عن مين؟؟");
         let reason = args.join(" ").slice(22);
