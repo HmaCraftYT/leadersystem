@@ -532,10 +532,7 @@ client.on('message', function(msg) {
       .addField('📅**__ تم عمل السيرفر في__**',msg.guild.createdAt.toLocaleString())
       msg.channel.send({embed:embed});
     }
-  });
-const Discord = require('discord.js');
-const client = new Discord.Client();
- 
+  }); 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
